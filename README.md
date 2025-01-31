@@ -10,7 +10,7 @@ A web application that allows users to browse shelter dogs, filter by breed, sav
 ### **🔹 Prerequisites**
 Make sure you have the following installed:
 - [Git](https://git-scm.com/)
-- [npm](https://www.npmjs.com/) (Comes with Node.js)
+- [npm](https://www.npmjs.com/) 
 
 ---
 
