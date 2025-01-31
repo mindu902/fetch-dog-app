@@ -1,51 +1,80 @@
 
-# Getting Started with Create React App
+# 🐶 Fetch Dog Finder
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A web application that allows users to browse shelter dogs, filter by breed, save favorites, and get matched with a dog for adoption.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Getting Started
 
-### `npm start`
+### **🔹 Prerequisites**
+Make sure you have the following installed:
+- [Git](https://git-scm.com/)
+- [npm](https://www.npmjs.com/) (Comes with Node.js)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### **📥 1️⃣ Clone the Repository**
+Run the following command to clone this repository to your local machine:
+```bash
+git clone https://github.com/mindu902/fetch-dog-app.git
+cd fetch-dog-app
+```
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### **📦 2️⃣ Install Dependencies**
+Install all required packages using:
+```bash
+npm install
+```
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### **🏃‍♂️ 3️⃣ Run the Application Locally**
+Start the development server:
+```bash
+npm start
+```
+After running the command, open **[http://localhost:3000](http://localhost:3000)** in your browser.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## **🌍 Deployment**
+This project is deployed using **Vercel**:  
+🔗 **Live URL:** [https://fetch-dog-app-six.vercel.app/](https://fetch-dog-app-six.vercel.app/)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+You can access the live version of the application here. It’s deployed and updated automatically on each GitHub push.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## **🛠 Tech Stack**
+- **React (TypeScript)** - Frontend Framework
+- **Material UI** - UI Components
+- **Redux Toolkit** - State Management
+- **React Router** - Navigation
+- **Axios** - API Calls
+---
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## **🌍 Features**
+- **User Authentication**: Login using name and email.
+- **Dog Search**: Browse and filter by breed.
+- **Favorites**: Save your favorite dogs.
+- **Match Feature**: Find your perfect dog match.
+- **Pagination & Sorting**: Browse through results easily.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## **🐛 Troubleshooting**
+### 🔹 **Common Issues & Fixes**
+| Issue | Solution |
+|---|---|
+| `Module not found` | Run `npm install` to install dependencies. |
+| `401 Unauthorized in Safari` | Enable `"Prevent Cross-Site Tracking"` in Safari settings. |
+| `Deployment Issues` | Run `vercel --prod` to force redeployment. |
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-<<<<<<< HEAD
-=======
->>>>>>> fetch dog match project
->>>>>>> fix search feature
+---
+
+## **📜 License**
+This project is licensed under the **MIT License**.
