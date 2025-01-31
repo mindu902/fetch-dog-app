@@ -181,7 +181,11 @@ export default function Search() {
           variant="contained"
           color="primary"
           sx={{ mr: 2, backgroundColor: "#fba918" }}
+<<<<<<< HEAD
           onClick={() => handleSearch()}
+=======
+          onClick={() => handleSearch(null, 1)}
+>>>>>>> fix search feature
         >
           Search
         </Button>
