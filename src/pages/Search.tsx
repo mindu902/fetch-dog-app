@@ -40,9 +40,9 @@ export default function Search() {
   const [dogs, setDogs] = useState<Dog[]>([]);
   const [loading, setLoading] = useState(false);
   const [sortOrder, setSortOrder] = useState<"asc" | "desc">("asc");
-  const [searchParams, setSearchParams] = useSearchParams(); 
+  const [searchParams, setSearchParams] = useSearchParams();
   const initialPage = Number(searchParams.get("page")) || 1;
-  
+
   const [currentPage, setCurrentPage] = useState(initialPage);
   const [totalResults, setTotalResults] = useState(0);
   const PAGE_SIZE = 9;
@@ -59,7 +59,10 @@ export default function Search() {
     loadBreeds();
   }, []);
 
-  const handleSearch = async (url: string | null = null, page = currentPage) => {   
+  const handleSearch = async (
+    url: string | null = null,
+    page = currentPage
+  ) => {
     setLoading(true);
     try {
       let searchResponse;
@@ -67,8 +70,8 @@ export default function Search() {
         searchResponse = await axios.get(API_BASE_URL + url, {
           withCredentials: true,
         });
-      } else {                
-        let currPageSize = totalResults - (page - 1) * PAGE_SIZE;        
+      } else {
+        let currPageSize = totalResults - (page - 1) * PAGE_SIZE;
         if (currPageSize <= 0) currPageSize = PAGE_SIZE;
         searchResponse = await searchDogs({
           breeds: selectedBreed ? [selectedBreed] : [],
@@ -78,7 +81,7 @@ export default function Search() {
         });
       }
 
-      const dogIds = searchResponse.data.resultIds;      
+      const dogIds = searchResponse.data.resultIds;
       setTotalResults(searchResponse.data.total || 0);
 
       setSearchParams({ page: String(page) });
@@ -181,11 +184,7 @@ export default function Search() {
           variant="contained"
           color="primary"
           sx={{ mr: 2, backgroundColor: "#fba918" }}
-<<<<<<< HEAD
-          onClick={() => handleSearch()}
-=======
           onClick={() => handleSearch(null, 1)}
->>>>>>> fix search feature
         >
           Search
         </Button>
